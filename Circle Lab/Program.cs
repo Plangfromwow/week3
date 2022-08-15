@@ -31,7 +31,7 @@ do
     
 }while (makeAnotherCircle);
 
-Console.WriteLine("Thanks for trying!");
+Console.WriteLine($"Great work making {circleCount} circle(s)!");
 
 static bool KeepGoing()
 {
