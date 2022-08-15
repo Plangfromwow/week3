@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PenSample", "PenSample\PenS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PenSample2", "PenSample2\PenSample2.csproj", "{D0FB47E1-014C-4FFB-AD1D-191F3AF3C957}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CD Demo", "CD Demo\CD Demo.csproj", "{C9A64873-2B4C-4FC3-A63A-65766D3C2286}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Circle Lab", "Circle Lab\Circle Lab.csproj", "{8C98959C-0CE9-4F19-84A5-DE75CFB4829F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{D0FB47E1-014C-4FFB-AD1D-191F3AF3C957}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0FB47E1-014C-4FFB-AD1D-191F3AF3C957}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0FB47E1-014C-4FFB-AD1D-191F3AF3C957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A64873-2B4C-4FC3-A63A-65766D3C2286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A64873-2B4C-4FC3-A63A-65766D3C2286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A64873-2B4C-4FC3-A63A-65766D3C2286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A64873-2B4C-4FC3-A63A-65766D3C2286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C98959C-0CE9-4F19-84A5-DE75CFB4829F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C98959C-0CE9-4F19-84A5-DE75CFB4829F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C98959C-0CE9-4F19-84A5-DE75CFB4829F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C98959C-0CE9-4F19-84A5-DE75CFB4829F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
