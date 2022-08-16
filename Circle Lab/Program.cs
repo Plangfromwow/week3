@@ -46,7 +46,8 @@ do
 
         rectangleCount++;
         Console.WriteLine($"You've made {rectangleCount} rectangle(s)!");
-    } else
+    } 
+    else
     {
         Console.WriteLine("Please choose a Rectangle or a Circle.");
     }

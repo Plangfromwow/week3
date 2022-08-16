@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CD Demo", "CD Demo\CD Demo.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Circle Lab", "Circle Lab\Circle Lab.csproj", "{8C98959C-0CE9-4F19-84A5-DE75CFB4829F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleDemo", "TriangleDemo\TriangleDemo.csproj", "{6A69B091-87AF-4720-8195-33253B2D6ACC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarClassDemo", "CarClassDemo\CarClassDemo.csproj", "{D3E29241-067E-4AE5-92E2-B5393034BB30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{8C98959C-0CE9-4F19-84A5-DE75CFB4829F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C98959C-0CE9-4F19-84A5-DE75CFB4829F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C98959C-0CE9-4F19-84A5-DE75CFB4829F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A69B091-87AF-4720-8195-33253B2D6ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A69B091-87AF-4720-8195-33253B2D6ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A69B091-87AF-4720-8195-33253B2D6ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A69B091-87AF-4720-8195-33253B2D6ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3E29241-067E-4AE5-92E2-B5393034BB30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3E29241-067E-4AE5-92E2-B5393034BB30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3E29241-067E-4AE5-92E2-B5393034BB30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3E29241-067E-4AE5-92E2-B5393034BB30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
