@@ -1,37 +1,31 @@
-﻿List<Song> playlist = new List<Song>();
+﻿/* 
+ * 
+ * Section 1: Create and populate the list of songs
+ * 
+ */
+List<Song> playlist = new List<Song>();
 Song song1 = new Song("The Beatles", "I want to hold your hand", "Rock", 1964);
 playlist.Add(song1);
-//Song song2 = new Song("Pink Floyd", "Comfortably Numb", "Progressive", 1979);
-//playlist.Add(song2);
-//Song song3 = new Song("Britney Spears", "Toxic", "Pop", 2003);
-//playlist.Add(song3);
-// we don't need to keep making a new variable after we put the object in the list. The list then becomes what hold that variable to that song.
 song1 = new Song("Pink Floyd", "Comfortably Numb", "Progressive", 1979);
 playlist.Add(song1);
 song1 = new Song("Britney Spears", "Toxic", "Pop", 2003);
 playlist.Add(song1);
 // We don't need a variable at all, we can just create the object and then put it directly in the lists add method. 
-playlist.Add(new Song("Dave Brubek", "Take 5", "Jazz", 1959));
+playlist.Add(new Song("Dave Brubek", "Take 5", "Jazz", 1959)); //Jeffs Favorite (Mine too)
+//
+// Section 2: Print out the titles
+//
 Console.WriteLine("Here is your playlist: ");
 foreach (var song in playlist)
 {
     Console.WriteLine(song.Title);
 }
-
-
+//
+// Section 3: Ask the user for the song and print out the details.
+//
 Console.Write("Which song Title do you want more info on?");
 string mySong = Console.ReadLine();
-Song found = null;
-
-foreach (Song next in playlist)
-{
-    if (next.Title == mySong)
-    {
-        found = next;
-        break;
-    }
-}
-
+Song found = findSong(playlist,mySong);
 if (found == null)
 {
     Console.WriteLine("Sorry your song wasn't found");
@@ -40,7 +34,9 @@ else
 {
     Console.WriteLine(found);
 }
-
+//
+// Section 4: A "Helper" method to search the list by title.
+// Side Note:We need to pass the list in
 static Song findSong(List<Song> theList, string theTitle)
 {
     foreach (Song next in theList)
