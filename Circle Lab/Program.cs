@@ -34,7 +34,8 @@ do
             makeAnotherCircle = KeepGoing();
         }
     }
-    else if (userChoice == "rectangle" || userChoice=="r") {
+    else if (userChoice == "rectangle" || userChoice == "r")
+    {
         Console.Write("Please choose a Height: ");
         double userHeight = Convert.ToDouble(Console.ReadLine());
         Console.Write("Please choose a Width: ");
@@ -42,12 +43,15 @@ do
 
         Rectangle userRectangle = new Rectangle(userHeight, userWidth);
         Console.WriteLine($"The Area is: {userRectangle.rectangleArea()} The Circumference is: {userRectangle.rectangleCircumference()}");
-        
+
         rectangleCount++;
         Console.WriteLine($"You've made {rectangleCount} rectangle(s)!");
+    } else
+    {
+        Console.WriteLine("Please choose a Rectangle or a Circle.");
     }
-    
-}while (makeAnotherCircle);
+
+} while (makeAnotherCircle);
 
 Console.WriteLine($"Great work making {circleCount} circle(s) and {rectangleCount} rectangle(s)!");
 
@@ -99,7 +103,7 @@ class circle
         double area = pi * (radius * radius);
         return area;
     }
-    
+
     public double printCircumference()
     {
         double Circumference = 2 * pi * radius;
@@ -114,7 +118,7 @@ class Rectangle
     public double length;
     public double width;
 
-    public Rectangle(double _length,double _width)
+    public Rectangle(double _length, double _width)
     {
         length = _length;
         width = _width;
