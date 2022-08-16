@@ -5,33 +5,51 @@
 // create a counter to let the user know how many circles they've created 
 
 double userRadius;
-Console.WriteLine("Welcome to the Circle Generator!");
+Console.WriteLine("Welcome to the Circle or Rectangle Generator!");
 bool makeAnotherCircle = true;
-int circleCount = 1;
+int circleCount = 0;
+int rectangleCount = 0;
 do
 {
-    Console.Write("Please input the radius for your cirlce: ");
-    string input = Console.ReadLine();
-    bool validateInput = double.TryParse(input, out userRadius);
-    if (!validateInput)
-    {
-        Console.WriteLine("Please enter a valid number for Radius");
-    }
-    else if (validateInput)
-    {
-        circle userCircle = new circle(userRadius);
-        Console.WriteLine();
-        Console.WriteLine("That's a nice circle!");
-        Console.WriteLine($"The Area is: {userCircle.printArea()} The Circumfrance is: {userCircle.printCircumfrance()}");
-        Console.WriteLine($"You've made {circleCount} Circles!");
-        circleCount++;
-        makeAnotherCircle = KeepGoing();
-    }
+    Console.WriteLine("Would you like to make a Circle or a Rectangle?");
+    string userChoice = Console.ReadLine().ToLower();
 
+    if (userChoice == "circle" || userChoice == "c")
+    {
+        Console.Write("Please input the radius for your cirlce: ");
+        string input = Console.ReadLine();
+        bool validateInput = double.TryParse(input, out userRadius);
+        if (!validateInput)
+        {
+            Console.WriteLine("Please enter a valid number for Radius");
+        }
+        else if (validateInput)
+        {
+            circle userCircle = new circle(userRadius);
+            Console.WriteLine();
+            Console.WriteLine("That's a nice circle!");
+            Console.WriteLine($"The Area is: {userCircle.printArea()} The Circumference is: {userCircle.printCircumference()}");
+            circleCount++;
+            Console.WriteLine($"You've made {circleCount} Circles!");
+            makeAnotherCircle = KeepGoing();
+        }
+    }
+    else if (userChoice == "rectangle" || userChoice=="r") {
+        Console.Write("Please choose a Height: ");
+        double userHeight = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Please choose a Width: ");
+        double userWidth = Convert.ToDouble(Console.ReadLine());
+
+        Rectangle userRectangle = new Rectangle(userHeight, userWidth);
+        Console.WriteLine($"The Area is: {userRectangle.rectangleArea()} The Circumference is: {userRectangle.rectangleCircumference()}");
+        
+        rectangleCount++;
+        Console.WriteLine($"You've made {rectangleCount} rectangle(s)!");
+    }
     
 }while (makeAnotherCircle);
 
-Console.WriteLine($"Great work making {circleCount} circle(s)!");
+Console.WriteLine($"Great work making {circleCount} circle(s) and {rectangleCount} rectangle(s)!");
 
 static bool KeepGoing()
 {
@@ -82,12 +100,34 @@ class circle
         return area;
     }
     
-    public double printCircumfrance()
+    public double printCircumference()
     {
-        double circumfrance = 2 * pi * radius;
-        return circumfrance;
+        double Circumference = 2 * pi * radius;
+        return Circumference;
     }
 
 }
 
 
+class Rectangle
+{
+    public double length;
+    public double width;
+
+    public Rectangle(double _length,double _width)
+    {
+        length = _length;
+        width = _width;
+    }
+
+    public double rectangleArea()
+    {
+        return length * width;
+    }
+
+    public double rectangleCircumference()
+    {
+        return 2 * (length + width);
+    }
+
+}
