@@ -101,20 +101,6 @@ static bool KeepGoing()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 static void findMovie(List<Movie> theList, string theCategory)
 {
     foreach (Movie next in theList)
