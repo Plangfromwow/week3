@@ -62,10 +62,6 @@ do
     Console.WriteLine();
 
 
-
-
-
-
 } while (KeepGoing());
 
 
