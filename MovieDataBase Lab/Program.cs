@@ -11,11 +11,27 @@ movieDatabase.Add(new Movie("SciFi", "Star Wars: Episode IV – A New Hope", 197
 movieDatabase.Add(new Movie("SciFi", "Star Trek", 2009, 127));
 
 string categorySelected = "";
-Console.WriteLine("Welcome to the Movie Database!");
+Console.WriteLine($"Welcome to the Movie Database! There are currently {movieDatabase.Count} movies!");
 
 do
 {
-    
+    List<string> categories = new List<string>();
+    foreach (Movie genre in movieDatabase)
+    {
+        if (categories.IndexOf(genre.category) == -1)
+        {
+            categories.Add(genre.category);
+        }
+    }
+
+    // found the categories lets do another loop to print them out 
+
+    foreach (string category in categories)
+    {
+        Console.WriteLine(category);
+    }
+    Console.WriteLine();
+
     Console.WriteLine("We have a wide variety of movies, please select a Category to get started!");
     Console.WriteLine();
     Console.WriteLine("Options are: ");
@@ -93,7 +109,6 @@ static bool KeepGoing()
         }
     }
 }
-
 
 
 

@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieDataBase Lab", "MovieD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Review", "Review\Review.csproj", "{F472F3AA-18BF-41DA-836F-6CDD793FE8A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassSeperateFile", "ClassSeperateFile\ClassSeperateFile.csproj", "{4803342C-88D5-4A93-B02D-5D3D9D085AE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{F472F3AA-18BF-41DA-836F-6CDD793FE8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F472F3AA-18BF-41DA-836F-6CDD793FE8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F472F3AA-18BF-41DA-836F-6CDD793FE8A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4803342C-88D5-4A93-B02D-5D3D9D085AE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4803342C-88D5-4A93-B02D-5D3D9D085AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4803342C-88D5-4A93-B02D-5D3D9D085AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4803342C-88D5-4A93-B02D-5D3D9D085AE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
